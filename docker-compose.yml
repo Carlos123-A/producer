@@ -4,4 +4,4 @@ services:
       context: .
       dockerfile: Dockerfile.producer
     environment:
-      KAFKA_BROKER: 18.218.28.236:29092  
+      KAFKA_BROKER: :29092  
