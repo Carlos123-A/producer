@@ -7,7 +7,7 @@ public class Program
 {
     public static async Task Main(string[] args)
     {
-        var config = new ProducerConfig { BootstrapServers = "18.218.28.236:29092" };
+        var config = new ProducerConfig { BootstrapServers = ":29092" };
         using var producer = new ProducerBuilder<Null, string>(config).Build();
 
         var books = new[]
